@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="site_3.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">
+                            <div class="duyuru">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.aspx">
+                                             <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Anasayfaya Dön</asp:LinkButton></a></li>
+                                        <li><a href="adminduyuru.aspx">Duyurular</a></li>
+                                        <li><a href="adminfilm.aspx">Filmler</a></li>
+                                        <li><a href="admintur.aspx">Türler</a></li>
+                                        <li><a href="adminyorum.aspx">Yorumlar</a></li>
+                                        <li><a href="adminresim.aspx">Galeri</a></li>
+                                        <li><a href="adminbaslik.aspx">Menü </a></li>
+                                    </ul>
+                                </nav>
+
+                            </div> &nbsp;
+                        </td>
+                        <td>
+                            <div class="icerik">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                            </div>
+                            </td>
+                    </tr>
+                </table>
+            
+             <style type="text/css">
+                 .duyuru{
+                     height:5000px; 
+                     background-color:#2d2828; 
+                     padding:10px; 
+                     margin-bottom:10px; 
+                     width: 240px;
+                 }
+                 .icerik{
+                     height:5000px;
+                     margin-bottom:50px;
+                     padding:10px;
+                     width:100%;
+                     border-radius:5px;
+                     background-color:#2d2828;
+                     text-align: left;
+                     margin-left: 0px;
+                 }
+                 .auto-style1 {
+                     width: 100%;
+                 }
+                 .auto-style2 {
+                     width: 382px;
+                 }
+             </style>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,317 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0E13F80-28F0-4523-AF47-D80FE88A79A6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>site_3</RootNamespace>
+    <AssemblyName>site 3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44322</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminbaslik.aspx" />
+    <Content Include="adminduyuru.aspx" />
+    <Content Include="adminfilm.aspx" />
+    <Content Include="admingiris.aspx" />
+    <Content Include="adminresim.aspx" />
+    <Content Include="admintur.aspx" />
+    <Content Include="adminyorum.aspx" />
+    <Content Include="baslikduzenle.aspx" />
+    <Content Include="duyuru.aspx" />
+    <Content Include="duyurudetay.aspx" />
+    <Content Include="duyuruduzenle.aspx" />
+    <Content Include="film.aspx" />
+    <Content Include="filmafis\0e39d5956e5370dcd7fca84dcb641a58.jpg" />
+    <Content Include="filmafis\a.jpg" />
+    <Content Include="filmafis\a714a804eb84c34237df24c7061d3764.jpg" />
+    <Content Include="filmafis\aa.jpg" />
+    <Content Include="filmafis\SB_Payoff_1-Sht_v6_Lg_TM_sm.jpg" />
+    <Content Include="filmdetay.aspx" />
+    <Content Include="filmduzenle.aspx" />
+    <Content Include="giris.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="icon\basics-15-512.png" />
+    <Content Include="icon\cell-8-0-480.png" />
+    <Content Include="icon\ekle.png" />
+    <Content Include="icon\geri.png" />
+    <Content Include="icon\newğlay.png" />
+    <Content Include="icon\next.png" />
+    <Content Include="icon\save.png" />
+    <Content Include="icon\sil.png" />
+    <Content Include="icon\stop.png" />
+    <Content Include="icon\update.png" />
+    <Content Include="index.aspx" />
+    <Content Include="kayitol.aspx" />
+    <Content Include="resim\0e39d5956e5370dcd7fca84dcb641a58.jpg" />
+    <Content Include="resim\a.jpg" />
+    <Content Include="resim\ayla.jpg" />
+    <Content Include="resim\harrypotter1.jpg" />
+    <Content Include="resim\p10980706_p_v8_ac.jpg" />
+    <Content Include="resim\SB_Payoff_1-Sht_v6_Lg_TM_sm.jpg" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="turdetay.aspx" />
+    <Content Include="turduzenle.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminbaslik.aspx.cs">
+      <DependentUpon>adminbaslik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbaslik.aspx.designer.cs">
+      <DependentUpon>adminbaslik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminduyuru.aspx.cs">
+      <DependentUpon>adminduyuru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminduyuru.aspx.designer.cs">
+      <DependentUpon>adminduyuru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminfilm.aspx.cs">
+      <DependentUpon>adminfilm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminfilm.aspx.designer.cs">
+      <DependentUpon>adminfilm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admingiris.aspx.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admingiris.aspx.designer.cs">
+      <DependentUpon>admingiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminresim.aspx.cs">
+      <DependentUpon>adminresim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminresim.aspx.designer.cs">
+      <DependentUpon>adminresim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admintur.aspx.cs">
+      <DependentUpon>admintur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admintur.aspx.designer.cs">
+      <DependentUpon>admintur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminyorum.aspx.cs">
+      <DependentUpon>adminyorum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminyorum.aspx.designer.cs">
+      <DependentUpon>adminyorum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="baslikduzenle.aspx.cs">
+      <DependentUpon>baslikduzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="baslikduzenle.aspx.designer.cs">
+      <DependentUpon>baslikduzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="duyuru.aspx.cs">
+      <DependentUpon>duyuru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duyuru.aspx.designer.cs">
+      <DependentUpon>duyuru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="duyurudetay.aspx.cs">
+      <DependentUpon>duyurudetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duyurudetay.aspx.designer.cs">
+      <DependentUpon>duyurudetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="duyuruduzenle.aspx.cs">
+      <DependentUpon>duyuruduzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duyuruduzenle.aspx.designer.cs">
+      <DependentUpon>duyuruduzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="film.aspx.cs">
+      <DependentUpon>film.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="film.aspx.designer.cs">
+      <DependentUpon>film.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="filmdetay.aspx.cs">
+      <DependentUpon>filmdetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filmdetay.aspx.designer.cs">
+      <DependentUpon>filmdetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="filmduzenle.aspx.cs">
+      <DependentUpon>filmduzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="filmduzenle.aspx.designer.cs">
+      <DependentUpon>filmduzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayitol.aspx.cs">
+      <DependentUpon>kayitol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayitol.aspx.designer.cs">
+      <DependentUpon>kayitol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="turdetay.aspx.cs">
+      <DependentUpon>turdetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="turdetay.aspx.designer.cs">
+      <DependentUpon>turdetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="turduzenle.aspx.cs">
+      <DependentUpon>turduzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="turduzenle.aspx.designer.cs">
+      <DependentUpon>turduzenle.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.Master" />
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44322/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

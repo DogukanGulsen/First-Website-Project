@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="genel.master.cs" Inherits="filmlervefilimler.genel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style>
+        .baslik{
+            width:100%;
+            background:#000000;
+        }
+        .icerik{
+            height:auto;
+            width:1400px;
+           
+            
+            text-align:center;
+            vertical-align:top;
+            padding:10px;
+            background:#000000;
+        }
+        .tur{
+            height:auto;
+            width:250px;
+            margin-top:150px;
+            background:#000000;
+        }
+        .alt{
+            vertical-align:bottom;
+            width:100%;
+            height:200px;
+            padding:10px;
+            background:#130d0d;
+        }
+
+
+        .auto-style1 {
+            width: 302px;
+        }
+        .auto-style2 {
+            width: 489px;
+            text-align: right;
+        }
+
+
+        .auto-style3 {
+            height: auto;
+            width: 319px;
+            
+            background: #251212;
+            color: #FFFFFF;
+            
+        }
+        .auto-style4 {
+            width: 1205px;
+        }
+         .newStyle1 {
+             font-family: "Berlin Sans FB Demi";
+         }
+         .auto-style5 {
+            width: 100%;
+        }
+         
+
+         .auto-style47 {
+             color: #FEFFFF;
+         }
+                  
+
+        .auto-style48 {
+            text-align: center;
+            width: 313px;
+        }
+        .abc{
+            color:white;
+            text-decoration:none;
+        }
+        .abc:hover{
+            color:black;
+            background-color:white;
+        }      
+
+        .auto-style50 {
+            font-size: 14pt;
+        }
+                  
+
+        .auto-style51 {
+            background-color: #000000;
+        }
+                  
+
+    </style>
+</head>
+<body background="aaaaaaaaa.jpg"> 
+    <form id="form1" runat="server">
+    <div>
+        <div class="baslik"> </div>
+        <table class="auto-style1" style=" width:100%; background-color:#000000;  text-align:center;">
+          <tr><td style="vertical-align: top"> 
+                    <%Response.Write(menutut); %>
+                </td>
+                </tr>
+            <tr><td style="text-align: right"> 
+                <asp:Label ID="Label5" runat="server" style="color: #FFFFFF" Text="Hoşgeldiniz Sayın " Visible="False" CssClass="auto-style50"></asp:Label>
+                <strong>&nbsp;
+                <asp:Label ID="Label4" runat="server" Text="Label" style="color: #FFFFFF" Visible="False" CssClass="auto-style50"></asp:Label></strong>&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButton1" runat="server" style="color:white" OnClick="LinkButton1_Click" Visible="False" CssClass="auto-style50">Çıkış</asp:LinkButton>
+                </td></tr>
+             
+                </table><table style="background-color:transparent; "><tr><td class="auto-style4" style="vertical-align:top; text-align:left" >     
+
+               <div class="auto-style3">
+            <table class="auto-style5" style="background-color:black;">
+                <tr>
+                    <td class="auto-style48">TÜRLER</td>
+                </tr>
+                <tr>
+                    <td class="auto-style48">
+                        <asp:DataList ID="DataList1" runat="server" Width="311px" CssClass="auto-style51">
+                            <ItemTemplate>
+                                <table class="auto-style5">
+                                    <tr>
+                                       <td style="border-style: none none dashed none; border-width: medium; border-color: #000000">
+                                           <a class="abc" href='turdetay.aspx?kategori_id=<%#Eval("kategori_id")%>'>
+                                                <asp:Label ID="Label1" runat="server" CssClass="abc" Text='<%# Eval("kategori_ad") %>'></asp:Label>
+                                </a></td>
+                                    </tr>
+                                </table>
+                            </ItemTemplate>
+                        </asp:DataList>
+                    </td>
+                </tr>
+            </table> 
+          </div>
+        </td>
+
+        <td class="auto-style2">
+            <div class="icerik"> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    </div>  
+        </td></tr></table>
+        
+        <div class="alt" style="vertical-align:bottom">
+            <span class="auto-style47">Online Kullanıcı Sayısı: </span>
+            <asp:Label ID="Label2" runat="server" CssClass="auto-style47" Text="Label"></asp:Label>
+            <br class="auto-style47" />
+            <span class="auto-style47">Toplam Ziyaretçi Sayısı: </span>
+            <asp:Label ID="Label3" runat="server" CssClass="auto-style47" Text="Label"></asp:Label>
+            <br /><br />
+                      <%Response.Write(h); %>
+        </div>
+
+       
+    </div>
+    </form>
+</body>
+</html>
